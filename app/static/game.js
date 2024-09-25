@@ -575,7 +575,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function proximoTurno() {
         turno++;
         inputAlterado = false; // Resetar a flag para o próximo turno
-        if (turno > 2) { // 4 anos * 12 meses = 48 turnos
+        if (turno > 48) { // 4 anos * 12 meses = 48 turnos
             finalizarJogo();
         } else {
             if ((turno - 1) % 12 === 0) {

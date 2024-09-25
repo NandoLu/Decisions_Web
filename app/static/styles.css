@@ -22,6 +22,10 @@ body {
     font-size: 100px;
     color: blue;
 }
+.img {
+    height: 300px;
+    width: 300px;
+}
 .form-container {
     display: flex;
     flex-direction: column;
@@ -48,18 +52,16 @@ input, select {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 20px;
+    padding: 20px 40px;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
+    margin: 30px;
 }
 
-.icon-conf{
-    font-size: 50px;
-}
 a{
     text-decoration: none;
 }

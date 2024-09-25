@@ -28,13 +28,16 @@
             // Recuperar valores do localStorage
             const nomeJogador = localStorage.getItem('nomeJogador');
             const economia = localStorage.getItem('economia');
-            const popularidade = localStorage.getItem('popularidade');
-
+            let popularidade = localStorage.getItem('popularidade');
+    
+            // Converter popularidade para inteiro
+            popularidade = parseInt(popularidade, 10);
+    
             // Exibir valores na página
             document.getElementById('nome-jogador').textContent = nomeJogador;
             document.getElementById('economia').textContent = economia;
             document.getElementById('popularidade').textContent = popularidade;
-
+    
             // Adicionar evento de clique ao botão
             document.getElementById('save-button').addEventListener('click', () => {
                 fetch('/save-desempenho/', {
