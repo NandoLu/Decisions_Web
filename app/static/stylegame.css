@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.9); /* Cor branca com 50% de opacidade */
+    margin: 0;
+    padding: 0;
+    background-image: url('world.webp');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-blend-mode: lighten; /* Mistura a cor de fundo com a imagem */
+}
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.mainDesempenho{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.emoji {
+    font-size: 24px;
+    margin-left: 5px;
+}
+.values {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.value-item {
+    margin: 0 10px;
+}
+.decision-form {
+    text-align: center;
+    padding: 20px;
+}
+.decision-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+.decision-form input[type="range"] {
+    width: 70%; /* Ajuste o comprimento aqui */
+}
+.decision-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.hand-emoji {
+    font-size: 20px;
+    margin-left: 5px;
+}
+.presidential-actions {
+    margin-top: 20px;
+}
+.presidential-actions ul {
+    list-style: none;
+    padding: 0;
+}
+.presidential-actions li {
+    margin-bottom: 10px;
+}
+
+.chart-container{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.column {
+    flex: 1;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+}

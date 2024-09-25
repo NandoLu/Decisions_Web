@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decisions - Jogo</title>
+    <link rel="stylesheet" href="../static/stylegame.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        Decisions<span class="emoji" aria-label="balança">⚖️</span>
+    </div>
+    <h1>Bem-vindoo, <span id="nome-jogador">{{ nome_jogador }}</span>!</h1>
+
+
+    <div class="values">
+        <div class="value-item">Dinheiro da economia:</div>
+        <div class="value-item">Popularidade:</div>
+        <div class="value-item">Mandato:</div>
+    </div>
+    <div class="container"> <!-- container -->
+        <div class="column form-column">
+            <div class="decision-form">
+                <form method="post">
+                    <h2>Arrecadação</h2>
+                    <label for="impostoB">Imposto Baixa-Renda</label>
+                    <input type="range" id="impostoB" name="impostoB" min="0" max="9" value="4">
+                    <br>
+                    <label for="impostoM">Imposto Média-Renda</label>
+                    <input type="range" id="impostoM" name="impostoM" min="0" max="9" value="4">
+                    <br>
+                    <label for="impostoA">Imposto Alta-Renda</label>
+                    <input type="range" id="impostoA" name="impostoA" min="0" max="9" value="4">
+                    <br>
+                    <label for="impostoVenda">Imposto Sobre Vendas</label>
+                    <input type="range" id="impostoVenda" name="impostoVenda" min="0" max="9" value="4">
+                    <br>
+            </div>
+        </div>
+        <div class="column form-column">
+            <div class="decision-form">
+                    <h2>Despesas</h2>
+                    <label for="saude">Investimento em Saúde</label>
+                    <input type="range" id="saude" name="saude" min="0" max="9" value="4">
+                    <br>
+                    <label for="educacao">Investimento em Educação</label>
+                    <input type="range" id="educacao" name="educacao" min="0" max="9" value="4">
+                    <br>
+                    <label for="seguranca">Investimento em Segurança</label>
+                    <input type="range" id="seguranca" name="seguranca" min="0" max="9" value="4">
+                    <br>
+                    <label for="infraestrutura">Investimento em Infraestrutura</label>
+                    <input type="range" id="infraestrutura" name="infraestrutura" min="0" max="9" value="4">
+                    <br>
+                    <button type="submit" id="pular-turno">Pular Turno<span class="hand-emoji" aria-label="ampulheta">⌛</span></button>
+                    <button type="submit" id="decretar">Decretar<span class="hand-emoji" aria-label="mão escrevendo">✍️</span></button>
+                </form>
+            </div>
+        </div>
+        <div class="column">
+            <div class="chart-container">
+                <canvas id="economiaChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="popularidadeChart"></canvas>
+            </div>
+        </div>
+    </div> <!-- container -->
+    <script src="../static/game.js">
+    </script>
+</body>
+</html>
