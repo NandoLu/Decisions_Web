@@ -134,11 +134,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if(economia < 2000000){
             const inflacao = Math.random();
             const divida = Math.random();
-            if(inflacao < 0.00001){
+            if(inflacao < 0.001){
                 alert("A inflação está muito alta! Queda de 30% na popularidade");
                 popularidade -= 30;
             }
-            if(divida < 0.0001){
+            if(divida < 0.001){
                 alert("Investidores estão deixando o país!");
                 economia -= 300000;
             }
@@ -148,16 +148,16 @@ document.addEventListener('DOMContentLoaded', () => {
             const assassinato = Math.random();
             const terremoto = Math.random();
             const assassinatof = Math.random();
-            if (assassinatof < 0.1) {
+            if (assassinatof < 0.09) {
                 alert("Tentativa fracassada de assassinato!");
                 popularidade -= 30;
             }
-            if (terremoto < 0.002) { // 30% de chance
+            if (terremoto < 0.1) { // 30% de chance
                 alert("Um terremoto atinge parte do país! <br> Gasto de -20.000M");
                 economia -= 200000;
                 popularidade -= 30;
             }
-            if (assassinato < 0.0001) {
+            if (assassinato < 0.1) {
                 alert("Você foi assassinado devido à baixa popularidade!");
                 finalizarJogo();
             }
@@ -168,21 +168,21 @@ document.addEventListener('DOMContentLoaded', () => {
             const recordeArrecadacao = Math.random();
             const terremoto = Math.random();
             const epidemia = Math.random();
-            if (epidemia < 0.0001) { 
+            if (epidemia < 0.1) { 
                 alert("Uma epidemia atinge o país! - Gasto de -700.000M");
                 economia -= 7000000;
                 popularidade -= 30;
             }
-            if (terremoto < 0.0001) { 
+            if (terremoto < 0.1) { 
                 alert("Um terremoto atinge parte do país! <br> Gasto de -20.000M");
                 economia -= 200000;
                 popularidade -= 30;
             }
-            if (virus < 0.001){
+            if (virus < 0.1){
                 alert("Um vírus de espalha pelo país! <br> Gasto de -120.000M");
                 economia -= 120000;
             }
-            if (recordeArrecadacao < 0.001){
+            if (recordeArrecadacao < 0.1){
                 alert("Recorde de arrecadação! <br> Ganho de +100.000M");
                 economia += 1000000;
             }
@@ -193,21 +193,21 @@ document.addEventListener('DOMContentLoaded', () => {
             const recordeArrecadacao = Math.random();
             const terremoto = Math.random();
             const epidemia = Math.random();
-            if (epidemia < 0.0001) { 
+            if (epidemia < 0.1) { 
                 alert("Uma epidemia atinge o país! - Gasto de -700.000M");
                 economia -= 7000000;
                 popularidade -= 30;
             }
-            if (recordeArrecadacao < 0.001) {
+            if (recordeArrecadacao < 0.1) {
                 alert("Recorde de arrecadação! <br> Ganho de +100.000M");
                 economia+= 1000000;
             }
-            if (milagreEconomico < 0.0001) { 
+            if (milagreEconomico < 0.1) { 
                 alert("Milagre econômico! <br> Ganho de +400.000M");
                 economia+= 4000000;
                 popularidade += 15;
             }
-            if (terremoto < 0.001) { 
+            if (terremoto < 0.1) { 
                 alert("Um terremoto atinge parte do país! <br> Gasto de -200.000M");
                 economia -= 2000000;
                 popularidade -= 30;
@@ -575,7 +575,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function proximoTurno() {
         turno++;
         inputAlterado = false; // Resetar a flag para o próximo turno
-        if (turno > 48) { // 4 anos * 12 meses = 48 turnos
+        if (turno > 20) { // 4 anos * 12 meses = 48 turnos
             finalizarJogo();
         } else {
             if ((turno - 1) % 12 === 0) {

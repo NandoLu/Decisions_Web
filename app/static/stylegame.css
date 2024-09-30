@@ -10,7 +10,7 @@ body {
     background-blend-mode: lighten; /* Mistura a cor de fundo com a imagem */
 }
 .navbar {
-    background-color: #333;
+    background-color: #007bff;
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -81,12 +81,13 @@ body {
 .chart-container{
     width: 300px;
     height: 300px;
-    margin-bottom: 10px;
+    margin: 50px;
 }
 .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin: 40px;
 }
 .column {
     flex: 1;
@@ -108,4 +109,11 @@ body {
 }
 a{
     text-decoration: none;
+}
+.img {
+    height: 30px;
+    width: 30px;
+}
+h1{
+   color: black;
 }

@@ -30,17 +30,6 @@ class Cenario(models.Model):
         verbose_name = "Cenário"
         verbose_name_plural = "Cenários"
          
-
-class Configuracao(models.Model):
-    nome_jogador = models.ForeignKey(Jogador, on_delete=models.CASCADE, verbose_name="Nome do jogador")
-    idioma = models.CharField(max_length=9, verbose_name="Idioma escolhido")
-    tema = models.CharField(max_length=6, verbose_name="Tema escolhido")
-    def __str__(self):
-        return f'{self.idioma}, {self.tema}'
-    class Meta:
-        verbose_name = "Configuração"
-        verbose_name_plural = "Configurações"
-    
     
 class Desempenho(models.Model):
     nome_jogador = models.ForeignKey(Jogador, on_delete=models.CASCADE, verbose_name="Nome do jogador")
