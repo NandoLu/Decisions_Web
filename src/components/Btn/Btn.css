@@ -1,0 +1,10 @@
+.Btn{
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 5px 15px;
+    color: black;
+}
+.TextBtn{
+    font-size: 25px;
+    font-weight: 600;
+}
