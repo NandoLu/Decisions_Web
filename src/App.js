@@ -1,9 +1,11 @@
+import Btn from './components/Btn';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Btn></Btn>
         <p>
          Decisions
         </p>
